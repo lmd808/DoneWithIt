@@ -3,7 +3,8 @@ import Constants from 'expo-constants';
 
 const Styles = StyleSheet.create({
 	screen: {
-		padding: Constants.statusBarHeight
+		padding: Constants.statusBarHeight,
+		flex: 1
 	}
 });
 

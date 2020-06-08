@@ -24,18 +24,27 @@ const initialMessages = [
 
 function MessagesScreen(props) {
 	const [ messageState, setMessageState ] = useState(initialMessages);
+	const [refreshing, setRefreshing] = useState(false)
 
-	// fix this later
-	// rerender not working
 	const handleDelete = (item) => {
-		// the correct ids are being returned
-		// however... the id equaling the target id is not being removed in the rerender.
-		setMessageState(messageState.filter((m) => m.id !== item.id));
+		// state is updated in message state but no rerender 
+		setMessageState(messageState.filter(m=> m.id !== item.id))
+		console.log(messageState)
 	};
+		
 
 	return (
 		<Screen>
 			<FlatList
+			refreshing={refreshing}
+			onRefresh={()=>				
+				{setMessageState([{
+				id: 2,
+				title: 'T2',
+				description: 'D2',
+				image: require('../assets/face.jpg')
+			}])}
+		}
 				data={initialMessages}
 				keyExtractor={(initialMessages) => initialMessages.id.toString()}
 				renderItem={({ item }) => (
