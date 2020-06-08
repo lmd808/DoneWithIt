@@ -10,12 +10,15 @@ const Styles = StyleSheet.create({
 		width: 70,
 		height: 70,
 		borderRadius: 35,
-		marginRight: 10
 	},
 	title: {
 		fontWeight: '500',
 		fontSize: 18,
 		color: Colors.black
+	},
+	textContainer:{
+		marginLeft: 10,
+		justifyContent: 'center'
 	},
 	subtitle: {
 		color: Colors.grey,
