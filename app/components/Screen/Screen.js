@@ -3,7 +3,7 @@ import { Text, StyleSheet, SafeAreaView } from 'react-native';
 
 import Styles from './styles';
 
-function Screen({ children }) {
-	return <SafeAreaView style={Styles.screen}>{children}</SafeAreaView>;
+function Screen({ children, style }) {
+	return <SafeAreaView style={[Styles.screen, style]}>{children}</SafeAreaView>;
 }
 export default Screen;
