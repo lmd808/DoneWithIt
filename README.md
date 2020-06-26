@@ -1,5 +1,5 @@
 # DoneWithIt
-# React Native Mobile Application for selling used goods. 
+### React Native Mobile Application for selling used goods. 
 
 ## Selling Unwanted good with a click of A button 
 Throw away culture is so last year. With DoneWithIt you can easily re-home gently used items with a a few simple clicks. 
